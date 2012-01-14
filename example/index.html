@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>Scrolly: a simple jQuery parallax plugin</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/logo.png" />
+        <h1>Scrolly: a simple jQuery parallax plugin</h1>
+    </header>
+
+    <section id="bottle">
+        <article>
+        <h1>Our products are a load of rubbish.</h1>   
+        <p><strong>NIKE FREE TR FIT</strong>
+        Each Nike 2010 World Championship Football jersey is made entirely from recycled polyester. That's up to eight recycled plastic bottles per jersey. In total, that diverted nearly 13 million plastic bottles from landfills. Yes, you read right. 13 million. Plastic. Bottles.</p>    
+        </article>
+        <div class="parallax" data-velocity="-.3"></div>
+    </section>
+    <section id="story-freext">
+        <article>
+        <h1>One shoe does good,
+            the other shoe kicks ass.</h1>   
+        <p><strong>NIKE FREE TR FIT</strong>
+        The Free TR Fit is designed with a lower environmental impact using
+        environmentally preferred rubber, water-based cementing and recycled polyester.
+        That means every step in the multi-directional flex groove outsole replicates
+        the foot's natural movement and helps women get more out of their workout without
+        leaving a huge environmental footprint. Everyone's a winner.</p>    
+        </article>
+        <div class="parallax" data-velocity="-.1"></div>
+        <div class="parallax" data-velocity="-.4" data-fit="600"></div>
+    </section>
+    <section></section>
+</header>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../jquery.scrolly.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+       $('.parallax').scrolly({bgParallax: true}); 
+    });
+</script>
+</body>
+</html>

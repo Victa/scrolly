@@ -1,16 +1,14 @@
 /*
- *  Project: Scrolly : parallax is easy !
- *  Description: Base on jQuery boilerplate
- *  Author: Victor C. / Octave & Octave
+ *  Project: Scrolly : parallax is easy as a matter of fact !
+ *  Description: Based on jQuery boilerplate
+ *  Author: Victor C. / Octave & Octave web agency
  */
-
-// Usage :
-// <div id="fish" class="paralax" data-velocity=".8"></div>  -- data-velocity : oo > velocity < 1
-// $('.parallax').scrolly();
 (function ( $, window, document, undefined ) {
     // Create the defaults once
     var pluginName = 'scrolly',
-        defaults = {};
+        defaults = {
+            bgParallax: false
+        };
 
     function Plugin( element, options ) {
         this.element = element;
@@ -30,6 +28,7 @@
         this.offsetTop = this.$element.offset().top;
         this.height = this.$element.outerHeight(true);
         this.velocity = this.$element.attr('data-velocity');
+        this.bgStart = parseInt(this.$element.attr('data-fit'), 10);
 
         $(document).scroll(function(){
             self.scrolly();
@@ -50,7 +49,14 @@
                 position = this.startPosition + dT  * this.velocity;
             }
         }
-        this.$element.css({top: position});
+        // Fix background position
+        if(this.bgStart){ position = position + this.bgStart; }
+
+        if(this.options.bgParallax === true) {
+            this.$element.css({backgroundPosition: '50% '+position+'px'});
+        } else {
+            this.$element.css({top: position});
+        }
     };
 
     $.fn[pluginName] = function ( options ) {

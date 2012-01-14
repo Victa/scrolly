@@ -1,0 +1,53 @@
+/* Reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+body{font:13px/1.1 Helvetica,sans-serif;}
+p{line-height:1.6;}
+/* Example page */
+strong{font-weight:bold;}
+header{height:100px;}
+header img{float:left;margin:14px 0 0 14px}
+header h1{margin-left:14px;float:left;font-size:20px;line-height:100px;}
+
+section {
+    min-height: 1000px;
+    position: relative;
+    width: 100% !important;
+    min-width: 1000px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+section:nth-of-type(1){background:whitesmoke;height:1200px;}
+section:nth-of-type(2){background:black;height:1600px;}
+
+#story-freext>div:nth-of-type(1) {
+    background: url(../img/nike-bg.jpeg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    width:100%;
+    top:0;left:0;
+}
+
+#story-freext>div:nth-of-type(2) {
+    background: url(../img/nike.png) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    top:0px;left:100px;
+    width:100%;
+}
+
+#bottle>div:nth-of-type(1){
+    background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    position:absolute;
+    top:0;left:0;
+    width:100%;   
+}
+
+section h1{color:#4F9426;width:300px;font-size:65px;margin-bottom:14px;}
+section p{color:black;width:300px;}
+section article{position:absolute;top:240px;left:40px;width:300px;z-index:4;}
