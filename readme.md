@@ -1,7 +1,7 @@
 Scrolly 
 ==============
 
-**Live example:** http://lab.victorcoulon.fr/javascript/scrolly/
+**Live example:** http://lab.victorcoulon.fr/javascript/scrolly/ (inspired by Nike Better World)
 
 **HTML**
 
