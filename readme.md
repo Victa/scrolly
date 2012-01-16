@@ -18,4 +18,6 @@ If not:
     $('.parallax').scrolly({bgParallax: true});
     
     
-License MIT
+**License**
+
+MIT Licence
