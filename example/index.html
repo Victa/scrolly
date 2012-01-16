@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <header>
         <img src="img/logo.png" />
         <h1>Scrolly: a simple jQuery parallax plugin</h1>
@@ -31,13 +30,13 @@
         leaving a huge environmental footprint. Everyone's a winner.</p>    
         </article>
         <div class="parallax" data-velocity="-.1"></div>
-        <div class="parallax" data-velocity="-.5" data-fit="500"></div>
+        <div class="parallax" data-velocity="-.5" data-fit="525"></div>
     </section>
     <section></section>
 </header>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="../jquery.scrolly.js"></script>
-<script type="text/javascript">
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="../jquery.scrolly.js"></script>
+<script>
     $(document).ready(function(){
        $('.parallax').scrolly({bgParallax: true});
     });
