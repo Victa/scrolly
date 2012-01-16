@@ -1,6 +1,8 @@
 Scrolly 
 ==============
 
+**DEMO**
+http://lab.victorcoulon.fr/javascript/scrolly/
 
 **HTML**
 
