@@ -16,3 +16,6 @@ If it's a simple element, like an image.
 If not:
 
     $('.parallax').scrolly({bgParallax: true});
+    
+    
+License MIT
