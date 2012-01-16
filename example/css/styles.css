@@ -51,3 +51,5 @@ section:nth-of-type(2){background:black;height:1600px;}
 section h1{color:#4F9426;width:300px;font-size:65px;margin-bottom:14px;}
 section p{color:black;width:300px;}
 section article{position:absolute;top:240px;left:40px;width:300px;z-index:4;}
+
+.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}

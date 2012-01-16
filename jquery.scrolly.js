@@ -8,7 +8,8 @@
     var pluginName = 'scrolly',
         defaults = {
             bgParallax: false
-        };
+        },
+        didScroll = false;
 
     function Plugin( element, options ) {
         this.element = element;
@@ -31,8 +32,15 @@
         this.bgStart = parseInt(this.$element.attr('data-fit'), 10);
 
         $(document).scroll(function(){
-            self.scrolly();
+            self.didScroll = true;
         });
+        
+        setInterval(function() {
+            if (self.didScroll) {
+                self.didScroll = false;
+                self.scrolly();
+            }
+        }, 10);
     };
 
     Plugin.prototype.scrolly = function() {
@@ -40,11 +48,11 @@
             wH = $(window).height(),
             position = this.startPosition;
 
-        if(this.offsetTop >= (dT+wH+this.height)) {
+        if(this.offsetTop >= (dT+wH)) {
             this.$element.addClass('scrolly-invisible');
         } else {
             if(this.$element.hasClass('scrolly-invisible')){
-                position = this.startPosition + (dT + ( wH- this.offsetTop ) + this.height ) * this.velocity;
+                position = this.startPosition + (dT + ( wH - this.offsetTop ) ) * this.velocity;
             } else {
                 position = this.startPosition + dT  * this.velocity;
             }
