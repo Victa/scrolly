@@ -1,8 +1,7 @@
 Scrolly 
 ==============
 
-**DEMO**
-http://lab.victorcoulon.fr/javascript/scrolly/
+**Live example:** http://lab.victorcoulon.fr/javascript/scrolly/
 
 **HTML**
 
