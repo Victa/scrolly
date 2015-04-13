@@ -3,7 +3,7 @@
   "description": "Parallax JQuery plugin.",
   "version": "0.0.1",
   "author": {
-    "name": "Victa",
+    "name": "Victor Coulon",
     "email": "vic.coulon@gmail.com"
   },
   "filename": "./jquery.scrolly.js",
